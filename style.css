@@ -50,6 +50,16 @@ h2 { border-left: 5px solid var(--accent-color); padding-left: 10px; margin-top:
 
 .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 
+.soft-skills-list {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+[dir="rtl"] .soft-skills-list {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
 .certificates-list { list-style: none; padding: 0; }
 
 .certificates-list li {
@@ -104,12 +114,12 @@ nav {
 }
 
 .profile-pic {
-    width: 150px; /* Size of the picture */
+    width: 150px; 
     height: 150px;
-    border-radius: 50%; /* Makes it circular */
-    object-fit: cover; /* Prevents stretching */
+    border-radius: 50%; 
+    object-fit: cover; 
     border: 3px solid var(--accent-color);
-    background-color: #ccc; /* Placeholder color */
+    background-color: #ccc; 
     transition: transform 0.3s ease;
 }
 
@@ -118,7 +128,7 @@ nav {
     transform: scale(1.05);
 }
 
-/* Ensure the picture looks good when printed */
+
 @media print {
     .profile-pic {
         width: 120px;
@@ -138,13 +148,13 @@ nav {
     font-weight: bold;
     padding: 8px 16px;
     border: 2px solid var(--accent-color);
-    border-radius: 25px; /* Rounded pill shape */
+    border-radius: 25px; 
     transition: all 0.3s ease;
 }
 
 .linkedin-link:hover {
     background-color: var(--accent-color);
-    color: white; /* Flips colors on hover */
+    color: white;
 }
 
 /* For the Arabic RTL layout */
